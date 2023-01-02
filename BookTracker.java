@@ -3,7 +3,7 @@ public class BookTracker
 { public static void main(String [] args )
     { // see readme.md for usage instructions
         int wpm = (int) 336 ; // Input how many words you read per minute here. See readme.md for a tutorial on how to get this number
-        int wpp = (int) 250 ; //
+        int wpp = (int) 250 ; // Based on the global average of books containing 250 words per page 
         int hr = (int) 60 ; 
         int annual = (int) 365 ;
         int biannual = (int) 365 / 2;
@@ -23,18 +23,18 @@ public class BookTracker
         }
 
         // input the number of pages in each book here , the first 12 have being filled in with the first 12 of Lex's list
-        double B1P=  288 * wpp ;
-        double B2P =  123 * wpp  ; 
-        double B3P =  176 * wpp ;
-        double B4P =  307 * wpp ; 
-        double B5P =  360 * wpp ;
-        double B6P =  200 * wpp ; 
-        double B7P =  128 * wpp ;
-        double B8P =  300 * wpp ; 
-        double B9P =  122 * wpp ;
-        double B10P = 192 * wpp ; 
-        double B11P =  824 * wpp ;
-        double B12P =  122 * wpp ; 
+        double B1P=  328 * wpp ;
+        double B2P =  224 * wpp  ; 
+        double B3P =  288 * wpp ;
+        double B4P =  123 * wpp ; 
+        double B5P =  176 * wpp ;
+        double B6P =  307 * wpp ; 
+        double B7P =  360 * wpp ;
+        double B8P =  200 * wpp ; 
+        double B9P =  128 * wpp ;
+        double B10P = 300 * wpp ; 
+        double B11P =  122 * wpp ;
+        double B12P =  192 * wpp ; 
         double B13P=  0 * wpp ; // All values set to zero from here , mannually fill in the page count of each book you want to read this year
         double B14P =  0 * wpp  ; 
         double B15P =  0 * wpp ;
@@ -88,9 +88,9 @@ public class BookTracker
        
 
 
-        System.out.println("These books will take " + roundedLength + " hours to read ");
-        if (Daily >= 1) {System.out.println ("Assuming these books are read over the course of "+ TimeFrame1 + "\n" + "It will take "+ roundedDaily + " hours of reading per day" );
-        } else  {System.out.println ("Assuming these books are read over the course of "+ TimeFrame1 + "\n" + "It will take "+ roundedDaily1 + " minutes of reading per day" );
+        System.out.println("These books will take approximately " + roundedLength + " hours to read ");
+        if (Daily >= 1) {System.out.println ("Assuming these books are read over the course of "+ TimeFrame1 + "\n" + "It will take approximately "+ roundedDaily + " hours of reading per day" );
+        } else  {System.out.println ("Assuming these books are read over the course of "+ TimeFrame1 + "\n" + "It will take approximately "+ roundedDaily1 + " minutes of reading per day" );
             }
         
         
